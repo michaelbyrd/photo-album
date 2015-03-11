@@ -6,13 +6,13 @@
 # Migration
 add_attachment :photos, :upload
 
-#### Model
+# Model
 has_attached_file :upload
 validates_attachment_content_type :upload, :content_type => /\Aimage\/.*\Z/
 validates :order, presence: true
 ```
 
-#### config/(dev/tes/prod).rb
+#### config/(dev/test/prod).rb
 ```rb
 config.paperclip_defaults = {
   :storage => :s3,
@@ -27,5 +27,5 @@ config.paperclip_defaults = {
 
 
 
-[1][https://github.com/thoughtbot/paperclip]
+[1]: https://github.com/thoughtbot/paperclip
 
