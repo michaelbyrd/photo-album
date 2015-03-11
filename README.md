@@ -9,6 +9,7 @@ add_attachment :photos, :upload
 # Model
 has_attached_file :upload
 validates_attachment_content_type :upload, :content_type => /\Aimage\/.*\Z/
+validates :order, presence: true
 ```
 
 
