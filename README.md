@@ -1,9 +1,19 @@
-# Template
+# Photo Album
 
-### What is included
-- Gemfile setup for heroku
-- removed turbolinks
-- add bourbon
-- add bitters
-- add neat
+#### [Paperclip][1]
+
+```rb
+# Migration
+add_attachment :photos, :upload
+
+# Model
+has_attached_file :upload
+validates_attachment_content_type :upload, :content_type => /\Aimage\/.*\Z/
+```
+
+
+
+
+
+[1][https://github.com/thoughtbot/paperclip]
 
