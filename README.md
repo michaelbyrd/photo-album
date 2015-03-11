@@ -1,5 +1,11 @@
 # Photo Album
 
+#### Gemfile
+```rb
+gem 'paperclip'
+gem 'aws-sdk', '< 2.0'
+```
+
 #### [Paperclip][1]
 
 ```rb
